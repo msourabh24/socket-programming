@@ -12,3 +12,7 @@ udp:
 chat:
 	gcc -g -Wall chatserver.c -o chatserver
 
+files:
+	gcc -g -Wall send_file.c md5sum/md5.c -o send_file
+	gcc -g -Wall recv_file.c md5sum/md5.c -o recv_file
+
